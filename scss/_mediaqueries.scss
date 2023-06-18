@@ -1,0 +1,227 @@
+
+@media (max-width: 1024px) {
+    a p {
+        font-size: 1.5em;
+    }
+    /*Header Inicio*/
+    header { 
+        .contenedor-header { 
+            h1 { 
+                font-size: 3em;
+                margin-right: auto;
+                letter-spacing: 0.4em;
+            }
+            img { 
+                width: 4em;
+                margin-right: auto;
+            }
+            li {
+                padding: 0.5em;
+            }
+        }
+    }
+    /*Categorías inicio*/
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+        color: #333533;
+        letter-spacing: 0.3em;
+        padding: 0.5em;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: center; 
+     
+    .categorias-imagenes-inicio { 
+        width: 95%;
+        height: 50%;
+        border-radius: 15%;
+        padding: 0.5em;
+    }
+}
+    /* Productos inicio*/
+    .contenedor-productos-inicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+    .productos-imagenes-inicio { 
+        width: 40%;
+        height: 40%;
+        margin: 0.3em;
+        padding: 0.3em;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    .producto-no { 
+        display: none;
+        } 
+    /*New in inicio*/
+    .contenedor-newin-inicio {
+        .contenedor-newin2 { 
+            display: none;}
+        .imagenes-newin1{
+            width: 50%;
+            height: 50%;
+            margin: 0.5em;
+    }
+} 
+    /*Footer*/
+    .icono {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0.5em;
+    }
+    .icono-logo {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 1em;
+    }
+    .mapita { 
+        display: none;
+    } 
+    .redes-footer p {
+        display: none;
+    }  
+
+    /*Pagina Productos*/ 
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+    
+    .caja-producto {
+        width: 14em;
+        height: 24em;
+        margin: 0.5em;
+    }
+    .prodcutos-imagenes {
+        width: 12.5em;
+        height: 13em;
+        margin-top: 1em;
+    }
+    div h3 {
+        padding: 0.3em;
+        font-size: 1em;
+    }
+    h4 {
+        padding-right: 0.5em;
+    }
+    .comprar {
+        padding: 0.2em;
+        margin: 0.3em;
+    }   
+}
+    /*Pagina Categorias*/
+
+    .contenedor-categorias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 0.5em;
+      }
+    .categorias-imagenes {
+        width: 50%;
+        height: 50%;
+    }     
+    .caja-vino {
+        width: 14em;
+        height: 24em;
+        margin: 1em;
+    }
+    /*Pagina Contacto*/
+    .contenedor-mapa-info  {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 6em;
+    
+    .info { 
+        width: 3em;
+        height: 3em;
+    }
+    .contenedor-info {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .mapa-grande {
+        margin: 2em;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+}
+@media (max-width: 480px) { 
+    header { 
+        .contenedor-header { 
+        h1 { 
+            letter-spacing: 0.3em;
+        }
+        .carrito-usuario { 
+            padding: 0.8em;
+        }
+        .titulo-paginas {
+            font-size: 1.8em;
+            text-align: center;
+            margin: 1em;
+            color: #333533;
+            letter-spacing: 0.3em;
+        }
+        .logo { 
+            width: 5.5em;
+            padding: 0.5em;
+        }
+        li {
+            padding: 0.2em;
+            font-size: 0.8em;
+        }
+        }
+    }
+    a { 
+        font-size: 0.5em;
+    } 
+    .redes-footer p {
+        display: none;
+    } 
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 1em;
+        color: #333533;
+        letter-spacing: 0.3em;
+    }
+    /*Pagina Productos*/
+
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+    /*Pagina Categorias*/
+
+    .contenedor-categorias {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}

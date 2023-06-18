@@ -1,0 +1,16 @@
+.caja-vino {
+    width: 19em;
+    height: 30em;
+    background-color: #D6D6D6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333533;
+    margin: 2em;
+} 
+
+.comprar {
+    &hover {
+    background-color: #575a5e;
+    font-weight: bolder;
+    color: #D6D6D6
+} 
+}

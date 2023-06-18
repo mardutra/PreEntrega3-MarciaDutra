@@ -1,0 +1,17 @@
+.contenedor-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include alineacion (center, center, center, center);
+    gap: 0.5em;
+
+    .categorias-imagenes {
+    width: 70%;
+    height: 70%;
+    border-radius: 15%
+    }
+    .titulo-categorias {
+    display: block;
+    @include alineacion (center, center, center, center);
+    text-align: center;
+    }
+}

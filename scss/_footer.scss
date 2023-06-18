@@ -1,0 +1,45 @@
+footer {
+    background-color: $color-terciario;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.6em;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+.icono { 
+    @include iconos-chicos;
+}
+.icono-logo {
+    width: 6em;
+    height: 6em;
+    margin: 1.50em;
+}
+
+.redes-footer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-secundario;
+
+    p {
+        margin: 0;
+        font-size: 1em;
+  }
+}
+}
+.volver {
+    display: block;
+    text-align: right;
+    margin: 1.25em; 
+    img  { 
+        @include iconos-chicos;
+    }
+    .va {
+    font-size: 1em;
+    color: $color-secundario;
+    font-weight: bold;
+}   
+}

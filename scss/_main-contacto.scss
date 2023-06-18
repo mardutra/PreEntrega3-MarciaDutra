@@ -1,0 +1,101 @@
+/*Formato Pagina Contacto*/
+.contenedor-mapa-info  {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    @include alineacion (center, center, center, center);
+    margin-bottom: 10em;
+
+.info { 
+    width: 3em;
+    height: 3em;
+    margin: 0.8em;
+}
+.contenedor-info {
+    display: block;
+    @include alineacion (start, start, start, start);
+    text-align: start;
+  }
+.mapa-grande {
+    margin-left: auto;
+    width:90%;
+    @include alineacion (end, end, end, end);
+}
+.esc {
+    margin: 0.5em;
+    font-size: 2em;
+  } 
+.informacion {
+    font-size: 1.2em;
+  } 
+}
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8em;
+    background-color: #D6D6D6;
+
+.formulario {
+    display: flex;
+    width: 25em;
+    justify-content: center;
+    margin: 0.6em;
+    border-radius: 15%;
+    @include padding-distintos (1.25em, 1.5em, 0.6em,0.6em);
+}
+form {
+    display: block;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+label {
+    display: block;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+}
+input {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+}
+}
+h6 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0.6em;
+    color: $color-secundario;
+    letter-spacing: 0.3em;
+}
+.contenedor-redes {
+    display: flex;
+    padding: 0.6em;
+    margin-top: 6.25em;
+    margin-bottom: 9em;
+    @include alineacion (center, center, center, center);
+}
+.contenedor-redes img {
+    display: block;
+    margin: 0 auto;
+  }
+textarea  {
+    display: block;
+} 
+.button-form {
+    background-color: rgba(245, 203, 92, 0.5);
+    margin-bottom: 2em;
+    &:hover {
+    background-color:$color-terciario;
+    font-weight: bolder;
+    border-color: $color-secundario;
+    } 
+} 
+.enfocar {
+    &:focus {
+    outline: none;
+    border-color: $color-terciario;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+.contacto-redes {
+    width: 3em;
+}
