@@ -1,6 +1,5 @@
 .caja-vino {
-    width: 19em;
-    height: 30em;
+    @include ancho-alto (19em, 30em);
     background-color: #D6D6D6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #333533;
@@ -9,8 +8,8 @@
 
 .comprar {
     &hover {
-    background-color: #575a5e;
+    background-color: $color-secundario;
     font-weight: bolder;
-    color: #D6D6D6
+    color: $color-primario;
 } 
 }

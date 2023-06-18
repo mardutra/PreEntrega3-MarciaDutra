@@ -6,8 +6,7 @@
     margin-bottom: 10em;
 
 .info { 
-    width: 3em;
-    height: 3em;
+    @include ancho-alto (3em, 3em);
     margin: 0.8em;
 }
 .contenedor-info {
@@ -44,18 +43,15 @@
 }
 form {
     display: block;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    @include margenes (0.3em, 0.3em);
 }
 label {
     display: block;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    @include margenes (0.3em, 0.3em);
     padding: 0.3em;
 }
 input {
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    @include margenes (0.3em, 0.3em);
     padding: 0.3em;
 }
 }
@@ -69,8 +65,7 @@ h6 {
 .contenedor-redes {
     display: flex;
     padding: 0.6em;
-    margin-top: 6.25em;
-    margin-bottom: 9em;
+    @include margenes (6.25em, 9em);
     @include alineacion (center, center, center, center);
 }
 .contenedor-redes img {

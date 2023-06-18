@@ -69,13 +69,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.6em;
-  justify-items: center;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
   align-content: center;
+  align-items: center;
   text-align: center;
 }
-footer .icono {
+footer .icono, footer .volver img, .volver footer img {
   width: 2em;
   height: 2em;
   margin-right: 0.5em;
@@ -100,11 +100,6 @@ footer .redes-footer p {
   display: block;
   text-align: right;
   margin: 1.25em;
-}
-.volver img {
-  width: 2em;
-  height: 2em;
-  margin-right: 0.5em;
 }
 .volver .va {
   font-size: 1em;
@@ -218,6 +213,7 @@ div p {
   border-color: #333533;
 }
 
+/*Formato Pagina Cateogrias*/
 .contenedor-categorias {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -372,7 +368,7 @@ textarea {
 }
 
 .comprarhover {
-  background-color: #575a5e;
+  background-color: #333533;
   font-weight: bolder;
   color: #D6D6D6;
 }
@@ -444,7 +440,7 @@ textarea {
     margin: 0.5em;
   }
   /*Footer*/
-  .icono {
+  .icono, .volver img {
     width: 1.5em;
     height: 1.5em;
     margin: 0.5em;
@@ -494,6 +490,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    justify-items: center;
     align-content: center;
     align-items: center;
     gap: 0.5em;
@@ -513,8 +510,9 @@ textarea {
     grid-template-columns: 2fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
     align-content: center;
+    align-items: center;
     margin-bottom: 6em;
   }
   .contenedor-mapa-info .info {
@@ -582,6 +580,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    justify-items: center;
     align-content: center;
     align-items: center;
   }

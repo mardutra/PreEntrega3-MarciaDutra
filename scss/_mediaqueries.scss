@@ -25,7 +25,7 @@
         font-size: 2em;
         text-align: center;
         margin: 1em;
-        color: #333533;
+        color: $color-secundario;
         letter-spacing: 0.3em;
         padding: 0.5em;
     }
@@ -38,8 +38,7 @@
         align-items: center; 
      
     .categorias-imagenes-inicio { 
-        width: 95%;
-        height: 50%;
+        @include ancho-alto (95%, 50%);
         border-radius: 15%;
         padding: 0.5em;
     }
@@ -51,8 +50,7 @@
         align-items: center;
    
     .productos-imagenes-inicio { 
-        width: 40%;
-        height: 40%;
+        @include ancho-alto (40%, 40%);
         margin: 0.3em;
         padding: 0.3em;
         justify-content: center;
@@ -67,20 +65,17 @@
         .contenedor-newin2 { 
             display: none;}
         .imagenes-newin1{
-            width: 50%;
-            height: 50%;
+            @include ancho-alto (50%, 50%);
             margin: 0.5em;
     }
 } 
     /*Footer*/
     .icono {
-        width: 1.5em;
-        height: 1.5em;
+        @include ancho-alto (1.5em, 1.5em);
         margin: 0.5em;
     }
     .icono-logo {
-        width: 2.5em;
-        height: 2.5em;
+        @include ancho-alto (2.5em, 2.5em);
         margin: 1em;
     }
     .mapita { 
@@ -99,13 +94,11 @@
         justify-items: center;
     
     .caja-producto {
-        width: 14em;
-        height: 24em;
+        @include ancho-alto (14em, 24em);
         margin: 0.5em;
     }
     .prodcutos-imagenes {
-        width: 12.5em;
-        height: 13em;
+        @include ancho-alto (12.5em, 13em);
         margin-top: 1em;
     }
     div h3 {
@@ -125,18 +118,14 @@
     .contenedor-categorias {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        @include  alineacion (center, center, center, center);
         gap: 0.5em;
       }
     .categorias-imagenes {
-        width: 50%;
-        height: 50%;
+        @include ancho-alto (50%, 50%);
     }     
     .caja-vino {
-        width: 14em;
-        height: 24em;
+        @include ancho-alto (14em, 24em);
         margin: 1em;
     }
     /*Pagina Contacto*/
@@ -144,9 +133,7 @@
         display: grid;
         grid-template-columns: 2fr;
         grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        @include  alineacion (center, center, center, center);
         margin-bottom: 6em;
     
     .info { 
@@ -220,8 +207,6 @@
     .contenedor-categorias {
         display: grid;
         grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        @include  alineacion (center, center, center, center);
     }
 }

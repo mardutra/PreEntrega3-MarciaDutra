@@ -1,8 +1,3 @@
-@mixin iconos-chicos { 
-    width: 2em;
-    height: 2em;
-    margin-right: 0.5em;
-}
 @mixin padding-distintos ($padding-top, $padding-bottom, $padding-left, $padding-rigth){ 
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
@@ -14,4 +9,12 @@
     justify-items: $justify-items;
     align-content: $align-content;
     align-items: $align-items;
+}
+@mixin margenes ($margin-top, $margin-bottom){
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+@mixin ancho-alto ($width, $height){
+    width: $width;
+    height: $height;
 }
