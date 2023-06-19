@@ -1,5 +1,6 @@
 
 h2 {
+    font-family: $font-secundario;
     font-size: 3em;
     text-align: center;
     margin: 2em;
@@ -11,8 +12,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     .categorias-imagenes-inicio { 
-        width: 15em;
-        height: 15em;
+        @include ancho-alto (15em, 15em);
         border-radius: 15%;
         margin: 0.3em;
     }
@@ -22,18 +22,19 @@ h2 {
         align-items: center;
         text-align: center;
     }
-}
-div p {
-    font-size: 1.5em;
-    margin: 0.2em;
+
+    div p {
+        font-family: $font-secundario;
+        font-size: 1.5em;
+        margin: 0.2em;
+    }
 }
 
 .contenedor-productos-inicio {
     display: flex;
     justify-content: space-around;
     .productos-imagenes-inicio { 
-        width: 25%;
-        height: 25%;
+        @include ancho-alto (25%, 25%);
         margin: 1em;
         padding: 1em;
     }

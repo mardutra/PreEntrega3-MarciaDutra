@@ -38,7 +38,6 @@
     width: 25em;
     justify-content: center;
     margin: 0.6em;
-    border-radius: 15%;
     @include padding-distintos (1.25em, 1.5em, 0.6em,0.6em);
 }
 form {
@@ -52,10 +51,40 @@ label {
 }
 input {
     @include margenes (0.3em, 0.3em);
+    @include ancho-alto (15em, 2.5em);
     padding: 0.3em;
+    transition: all 0.5s;
+}
+textarea  {
+    display: block;
+    @include ancho-alto (15em, 12em);
+} 
+.button-form {
+    @include ancho-alto (4em, 2.5em);
+    background-color: rgba(245, 203, 92, 0.5);
+    margin-bottom: 2em;
+    &:hover {
+    background-color:$color-terciario;
+    font-weight: bolder;
+    border-color: $color-secundario;
+    } 
+} 
+.enfocar1 {
+    &:focus {
+    outline: none;
+    border-color: $color-terciario;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+} 
+.enfocar2 {
+    @extend .enfocar1;
+    &:focus {
+    height: 2.8em;
+}
 }
 }
 h6 {
+    font-family: $font-secundario;
     font-size: 2em;
     text-align: center;
     padding: 0.6em;
@@ -72,25 +101,6 @@ h6 {
     display: block;
     margin: 0 auto;
   }
-textarea  {
-    display: block;
-} 
-.button-form {
-    background-color: rgba(245, 203, 92, 0.5);
-    margin-bottom: 2em;
-    &:hover {
-    background-color:$color-terciario;
-    font-weight: bolder;
-    border-color: $color-secundario;
-    } 
-} 
-.enfocar {
-    &:focus {
-    outline: none;
-    border-color: $color-terciario;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-}
 .contacto-redes {
     width: 3em;
 }

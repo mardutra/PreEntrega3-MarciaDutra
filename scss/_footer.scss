@@ -7,13 +7,11 @@ footer {
     text-align: center;
 
 .icono { 
-    width: 2em;
-    height: 2em;
+    @include ancho-alto (2em, 2em);
     margin-right: 0.5em;
 }
 .icono-logo {
-    width: 6em;
-    height: 6em;
+    @include ancho-alto (6em, 6em);
     margin: 1.50em;
 }
 
@@ -24,6 +22,7 @@ footer {
     color: $color-secundario;
 
     p {
+        font-family: $font-secundario;
         margin: 0;
         font-size: 1em;
   }
@@ -34,7 +33,7 @@ footer {
     text-align: right;
     margin: 1.25em; 
     img  { 
-        @extend .icono
+        @include ancho-alto (2em, 2em);
     }
     .va {
     font-size: 1em;

@@ -10,6 +10,10 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         color: $color-secundario;
         margin: 2em;
+        transition: all 0.5s;
+        &:hover {
+            border: 0.1em solid $color-secundario;
+            }
     }
     .prodcutos-imagenes {
         @include ancho-alto (17.5em, 18em);
@@ -20,15 +24,15 @@
         padding-right: auto;
         display: block;
     }
-    div h3 {
+    h3 {
         display: block;
         padding: 0.5em;
+        font-family: $font-secundario;
         font-size: 1.2em;
     }
     h4 {
-        display: block;
-        text-align: right;
-        padding-right: 0.5em;
+        @extend h3;
+        font-weight: bold;
     }
     .comprar {
         display: block;
