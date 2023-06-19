@@ -1,3 +1,14 @@
+/*Formato Pagina Productos*/
+.titulo-paginas {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+.subtitulo {
+    font-family: $font-secundario;
+    letter-spacing: 0.3em;
+    padding-bottom: 3em;
+    text-align: center;
+}
 .contenedor-productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

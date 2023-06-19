@@ -20,7 +20,10 @@
             }
         }
     }
-    /*Categorías inicio*/
+    .descripcion {
+        display: none;
+    } 
+    /*Descripción*/
     h2 {
         font-size: 2em;
         text-align: center;
@@ -29,6 +32,10 @@
         letter-spacing: 0.3em;
         padding: 0.5em;
     }
+    .descripcion {
+        display: none;
+    } 
+    /*Categorías inicio*/
     .contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -175,7 +182,7 @@
         }
     }
     .titulo-paginas {
-        font-size: 1.8em;
+        font-size: 2em;
         text-align: center;
         margin: 1em;
         color: #333533;
@@ -188,7 +195,7 @@
         display: none;
     } 
     h2 {
-        font-size: 2.5em;
+        font-size: 1.5em;
         text-align: center;
         margin: 1em;
         color: #333533;

@@ -129,6 +129,7 @@ footer .redes-footer p {
   font-weight: bold;
 }
 
+/*Formati Inicio*/
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 3em;
@@ -141,12 +142,13 @@ h2 {
 .descripcion {
   text-align: center;
 }
-.descripcion .desc {
+.descripcion p {
   margin-right: 5em;
   margin-left: 5em;
-  padding-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .descripcion h3, .descripcion .contenedor-productos h4, .contenedor-productos .descripcion h4 {
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.3em;
   padding-bottom: 2em;
 }
@@ -202,6 +204,19 @@ h2 {
 .contenedor-newin-inicio .contenedor-newin2 .imagenes-newin2 {
   height: 12em;
   margin: 1.5em;
+}
+
+/*Formato Pagina Productos*/
+.titulo-paginas {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+.subtitulo {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.3em;
+  padding-bottom: 3em;
+  text-align: center;
 }
 
 .contenedor-productos {
@@ -443,7 +458,10 @@ h6 {
   header .contenedor-header li {
     padding: 0.5em;
   }
-  /*Categorías inicio*/
+  .descripcion {
+    display: none;
+  }
+  /*Descripción*/
   h2 {
     font-size: 2em;
     text-align: center;
@@ -452,6 +470,10 @@ h6 {
     letter-spacing: 0.3em;
     padding: 0.5em;
   }
+  .descripcion {
+    display: none;
+  }
+  /*Categorías inicio*/
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -602,7 +624,7 @@ h6 {
     font-size: 0.8em;
   }
   .titulo-paginas {
-    font-size: 1.8em;
+    font-size: 2em;
     text-align: center;
     margin: 1em;
     color: #333533;
@@ -615,7 +637,7 @@ h6 {
     display: none;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     margin: 1em;
     color: #333533;
