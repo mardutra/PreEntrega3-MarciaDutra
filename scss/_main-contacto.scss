@@ -83,7 +83,18 @@
         }
     }
 }
-h6 {
+.contenedor-redes {
+    display: flex;
+    padding: 0.6em;
+    @include margenes (6.25em, 9em);
+    @include alineacion (center, center, center, center);
+
+.redes {
+    display: block;
+    margin: 0 auto;
+    width: 3em;
+  }
+  h6 {
     font-family: $font-secundario;
     font-size: 2em;
     text-align: center;
@@ -91,16 +102,4 @@ h6 {
     color: $color-secundario;
     letter-spacing: 0.3em;
 }
-.contenedor-redes {
-    display: flex;
-    padding: 0.6em;
-    @include margenes (6.25em, 9em);
-    @include alineacion (center, center, center, center);
-}
-.contenedor-redes img {
-    display: block;
-    margin: 0 auto;
-  }
-.contacto-redes {
-    width: 3em;
 }
