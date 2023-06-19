@@ -1,3 +1,4 @@
+/*Formato Footer*/
 footer {
     background-color: $color-terciario;
     display: grid;
@@ -5,28 +6,25 @@ footer {
     grid-gap: 0.6em;
     @include alineacion (center, center, center, center);
     text-align: center;
-
-.icono { 
-    @include ancho-alto (2em, 2em);
-    margin-right: 0.5em;
-}
-.icono-logo {
-    @include ancho-alto (6em, 6em);
-    margin: 1.50em;
-}
-
-.redes-footer {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: $color-secundario;
-
-    p {
-        font-family: $font-secundario;
-        margin: 0;
-        font-size: 1em;
-  }
-}
+    .icono { 
+        @include ancho-alto (2em, 2em);
+        margin-right: 0.5em;
+    }
+    .icono-logo {
+        @include ancho-alto (6em, 6em);
+        margin: 1.50em;
+    }
+    .redes-footer {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-secundario;
+        p {
+            font-family: $font-secundario;
+            margin: 0;
+            font-size: 1em;
+    }
+    }
 }
 .volver {
     display: block;

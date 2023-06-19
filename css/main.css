@@ -81,55 +81,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-footer {
-  background-color: #F5CB5C;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 0.6em;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-}
-footer .icono {
-  width: 2em;
-  height: 2em;
-  margin-right: 0.5em;
-}
-footer .icono-logo {
-  width: 6em;
-  height: 6em;
-  margin: 1.5em;
-}
-footer .redes-footer {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333533;
-}
-footer .redes-footer p {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  font-size: 1em;
-}
-
-.volver {
-  display: block;
-  text-align: right;
-  margin: 1.25em;
-}
-.volver img {
-  width: 2em;
-  height: 2em;
-}
-.volver .va {
-  font-size: 1em;
-  color: #333533;
-  font-weight: bold;
-}
-
-/*Formati Inicio*/
+/*Formato Inicio*/
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 3em;
@@ -206,16 +158,15 @@ h2 {
   margin: 1.5em;
 }
 
-/*Formato Pagina Productos*/
 .titulo-paginas {
   margin-bottom: 0;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .subtitulo {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.3em;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   text-align: center;
 }
 
@@ -232,15 +183,15 @@ h2 {
   background-color: rgba(245, 203, 92, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: #333533;
-  margin: 2em;
+  margin: 1.5em;
   transition: all 0.5s;
 }
 .contenedor-productos .caja-producto:hover {
   border: 0.1em solid #333533;
 }
-.contenedor-productos .prodcutos-imagenes {
-  width: 17.5em;
-  height: 18em;
+.contenedor-productos .productos-imagenes {
+  width: 16.5em;
+  height: 17em;
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -250,7 +201,7 @@ h2 {
 }
 .contenedor-productos h3, .contenedor-productos h4 {
   display: block;
-  padding: 0.5em;
+  padding: 0.6em;
   font-family: "Raleway", sans-serif;
   font-size: 1.2em;
 }
@@ -260,7 +211,7 @@ h2 {
 .contenedor-productos .comprar {
   display: block;
   padding: 0.2em;
-  margin: 0.5em;
+  margin: 0.6em;
 }
 .contenedor-productos .comprar:hover {
   background-color: #D6D6D6;
@@ -302,10 +253,13 @@ h2 {
   align-items: center;
   margin-bottom: 10em;
 }
-.contenedor-mapa-info .info {
-  width: 3em;
-  height: 3em;
-  margin: 0.8em;
+.contenedor-mapa-info .mapa-grande {
+  margin-left: auto;
+  width: 90%;
+  justify-content: end;
+  justify-items: end;
+  align-content: end;
+  align-items: end;
 }
 .contenedor-mapa-info .contenedor-info {
   display: block;
@@ -315,15 +269,12 @@ h2 {
   align-items: start;
   text-align: start;
 }
-.contenedor-mapa-info .mapa-grande {
-  margin-left: auto;
-  width: 90%;
-  justify-content: end;
-  justify-items: end;
-  align-content: end;
-  align-items: end;
+.contenedor-mapa-info .contenedor-info .info {
+  width: 3em;
+  height: 3em;
+  margin: 0.8em;
 }
-.contenedor-mapa-info .informacion {
+.contenedor-mapa-info .contenedor-info .informacion {
   font-size: 1.2em;
 }
 
@@ -423,22 +374,56 @@ h6 {
 }
 
 .caja-vino {
-  width: 19em;
-  height: 30em;
-  background-color: #D6D6D6;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #333533;
-  margin: 2em;
-  transition: all 0.5s;
-}
-.caja-vino:hover {
-  border: 0.1em solid #333533;
+  background-color: #D6D6D6 !important;
 }
 
-.comprarhover {
-  background-color: #333533;
-  font-weight: bolder;
-  color: #D6D6D6;
+/*Formato Footer*/
+footer {
+  background-color: #F5CB5C;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.6em;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .icono {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+}
+footer .icono-logo {
+  width: 6em;
+  height: 6em;
+  margin: 1.5em;
+}
+footer .redes-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333533;
+}
+footer .redes-footer p {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  font-size: 1em;
+}
+
+.volver {
+  display: block;
+  text-align: right;
+  margin: 1.25em;
+}
+.volver img {
+  width: 2em;
+  height: 2em;
+}
+.volver .va {
+  font-size: 1em;
+  color: #333533;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -515,20 +500,20 @@ h6 {
     margin: 0.5em;
   }
   /*Footer*/
-  .icono {
+  footer .icono {
     width: 1.5em;
     height: 1.5em;
     margin: 0.5em;
   }
-  .icono-logo {
-    width: 2.5em;
-    height: 2.5em;
+  footer .icono-logo {
+    width: 3em;
+    height: 3em;
     margin: 1em;
   }
-  .mapita {
+  footer .mapita {
     display: none;
   }
-  .redes-footer p {
+  footer .redes-footer p {
     display: none;
   }
   /*Pagina Productos*/
@@ -544,21 +529,24 @@ h6 {
     height: 24em;
     margin: 0.5em;
   }
-  .contenedor-productos .prodcutos-imagenes {
+  .contenedor-productos .caja-producto .productos-imagenes {
     width: 12.5em;
     height: 13em;
     margin-top: 1em;
   }
-  .contenedor-productos div h3, .contenedor-productos div h4 {
+  .contenedor-productos .caja-producto h3, .contenedor-productos .caja-producto h4 {
     padding: 0.3em;
     font-size: 1em;
+    margin-left: 0.5em;
   }
-  .contenedor-productos h4 {
+  .contenedor-productos .caja-producto h4 {
+    font-size: 1em;
     padding-right: 0.5em;
   }
-  .contenedor-productos .comprar {
-    padding: 0.2em;
+  .contenedor-productos .caja-producto .comprar {
+    padding: 0.1em;
     margin: 0.3em;
+    margin-left: 0.5em;
   }
   /*Pagina Categorias*/
   .contenedor-categorias {
@@ -574,11 +562,6 @@ h6 {
     width: 50%;
     height: 50%;
   }
-  .caja-vino {
-    width: 14em;
-    height: 24em;
-    margin: 1em;
-  }
   /*Pagina Contacto*/
   .contenedor-mapa-info {
     display: grid;
@@ -590,14 +573,14 @@ h6 {
     align-items: center;
     margin-bottom: 6em;
   }
-  .contenedor-mapa-info .info {
-    width: 3em;
-    height: 3em;
-  }
   .contenedor-mapa-info .contenedor-info {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .contenedor-mapa-info .contenedor-info .info {
+    width: 3em;
+    height: 3em;
   }
   .contenedor-mapa-info .mapa-grande {
     margin: 2em;
@@ -609,19 +592,32 @@ h6 {
   }
 }
 @media (max-width: 480px) {
-  header .contenedor-header h1 {
-    letter-spacing: 0.3em;
-  }
-  header .contenedor-header .carrito-usuario {
-    padding: 0.8em;
-  }
   header .contenedor-header .logo {
     width: 5.5em;
     padding: 0.5em;
   }
-  header .contenedor-header li {
-    padding: 0.2em;
-    font-size: 0.8em;
+  header .contenedor-header h1 {
+    letter-spacing: 0.3em;
+  }
+  header .navbar-custom {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  header .navbar-custom li {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  header .carrito-usuario {
+    padding: 0.8em;
+  }
+  h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 1em;
+    color: #333533;
+    letter-spacing: 0.3em;
   }
   .titulo-paginas {
     font-size: 2em;
@@ -631,17 +627,10 @@ h6 {
     letter-spacing: 0.3em;
   }
   a {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
   .redes-footer p {
     display: none;
-  }
-  h2 {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 1em;
-    color: #333533;
-    letter-spacing: 0.3em;
   }
   /*Pagina Productos*/
   .contenedor-productos {
