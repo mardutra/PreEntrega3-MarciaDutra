@@ -191,14 +191,14 @@ h2 {
   margin: 1.5em;
 }
 
-.contenedor-productos {
+.titulo-paginas .contenedor-productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
 }
-.contenedor-productos .caja-producto {
+.titulo-paginas .contenedor-productos .caja-producto {
   width: 19em;
   height: 30em;
   background-color: rgba(245, 203, 92, 0.5);
@@ -207,10 +207,10 @@ h2 {
   margin: 2em;
   transition: all 0.5s;
 }
-.contenedor-productos .caja-producto:hover {
+.titulo-paginas .contenedor-productos .caja-producto:hover {
   border: 0.1em solid #333533;
 }
-.contenedor-productos .prodcutos-imagenes {
+.titulo-paginas .contenedor-productos .prodcutos-imagenes {
   width: 17.5em;
   height: 18em;
   margin-top: 1em;
@@ -220,21 +220,21 @@ h2 {
   padding-right: auto;
   display: block;
 }
-.contenedor-productos h3, .contenedor-productos h4 {
+.titulo-paginas .contenedor-productos h3, .titulo-paginas .contenedor-productos h4 {
   display: block;
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
   font-size: 1.2em;
 }
-.contenedor-productos h4 {
+.titulo-paginas .contenedor-productos h4 {
   font-weight: bold;
 }
-.contenedor-productos .comprar {
+.titulo-paginas .contenedor-productos .comprar {
   display: block;
   padding: 0.2em;
   margin: 0.5em;
 }
-.contenedor-productos .comprar:hover {
+.titulo-paginas .contenedor-productos .comprar:hover {
   background-color: #D6D6D6;
   font-weight: bolder;
   border-color: #333533;
@@ -512,7 +512,7 @@ h6 {
     height: 13em;
     margin-top: 1em;
   }
-  .contenedor-productos div h3, .contenedor-productos div h4 {
+  .contenedor-productos div h3, .titulo-paginas .contenedor-productos div h4 {
     padding: 0.3em;
     font-size: 1em;
   }
@@ -578,13 +578,6 @@ h6 {
   header .contenedor-header .carrito-usuario {
     padding: 0.8em;
   }
-  header .contenedor-header .titulo-paginas {
-    font-size: 1.8em;
-    text-align: center;
-    margin: 1em;
-    color: #333533;
-    letter-spacing: 0.3em;
-  }
   header .contenedor-header .logo {
     width: 5.5em;
     padding: 0.5em;
@@ -592,6 +585,13 @@ h6 {
   header .contenedor-header li {
     padding: 0.2em;
     font-size: 0.8em;
+  }
+  .titulo-paginas {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 1em;
+    color: #333533;
+    letter-spacing: 0.3em;
   }
   a {
     font-size: 0.5em;
