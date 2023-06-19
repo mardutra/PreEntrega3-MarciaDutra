@@ -19,14 +19,15 @@
     width:90%;
     @include alineacion (end, end, end, end);
 }
-.esc {
-    margin: 0.5em;
-    font-size: 2em;
-  } 
 .informacion {
     font-size: 1.2em;
   } 
 }
+.esc {
+    margin: 1em;
+    font-size: 2em;
+    font-family: $font-secundario;
+} 
 .contenedor-formulario {
     display: flex;
     justify-content: center;

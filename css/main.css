@@ -78,7 +78,6 @@ a {
 p {
   font-size: 1.5em;
   color: #333533;
-  font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
 
@@ -139,6 +138,19 @@ h2 {
   letter-spacing: 0.3em;
 }
 
+.descripcion {
+  text-align: center;
+}
+.descripcion .desc {
+  margin-right: 5em;
+  margin-left: 5em;
+  padding-bottom: 2em;
+}
+.descripcion h3, .descripcion .contenedor-productos h4, .contenedor-productos .descripcion h4 {
+  letter-spacing: 0.3em;
+  padding-bottom: 2em;
+}
+
 .contenedor {
   display: flex;
   justify-content: center;
@@ -159,6 +171,7 @@ h2 {
 .contenedor div p {
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
+  font-weight: bolder;
   margin: 0.2em;
 }
 
@@ -191,14 +204,14 @@ h2 {
   margin: 1.5em;
 }
 
-.titulo-paginas .contenedor-productos {
+.contenedor-productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
 }
-.titulo-paginas .contenedor-productos .caja-producto {
+.contenedor-productos .caja-producto {
   width: 19em;
   height: 30em;
   background-color: rgba(245, 203, 92, 0.5);
@@ -207,10 +220,10 @@ h2 {
   margin: 2em;
   transition: all 0.5s;
 }
-.titulo-paginas .contenedor-productos .caja-producto:hover {
+.contenedor-productos .caja-producto:hover {
   border: 0.1em solid #333533;
 }
-.titulo-paginas .contenedor-productos .prodcutos-imagenes {
+.contenedor-productos .prodcutos-imagenes {
   width: 17.5em;
   height: 18em;
   margin-top: 1em;
@@ -220,21 +233,21 @@ h2 {
   padding-right: auto;
   display: block;
 }
-.titulo-paginas .contenedor-productos h3, .titulo-paginas .contenedor-productos h4 {
+.contenedor-productos h3, .contenedor-productos h4 {
   display: block;
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
   font-size: 1.2em;
 }
-.titulo-paginas .contenedor-productos h4 {
+.contenedor-productos h4 {
   font-weight: bold;
 }
-.titulo-paginas .contenedor-productos .comprar {
+.contenedor-productos .comprar {
   display: block;
   padding: 0.2em;
   margin: 0.5em;
 }
-.titulo-paginas .contenedor-productos .comprar:hover {
+.contenedor-productos .comprar:hover {
   background-color: #D6D6D6;
   font-weight: bolder;
   border-color: #333533;
@@ -295,12 +308,14 @@ h2 {
   align-content: end;
   align-items: end;
 }
-.contenedor-mapa-info .esc {
-  margin: 0.5em;
-  font-size: 2em;
-}
 .contenedor-mapa-info .informacion {
   font-size: 1.2em;
+}
+
+.esc {
+  margin: 1em;
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
 }
 
 .contenedor-formulario {
@@ -512,7 +527,7 @@ h6 {
     height: 13em;
     margin-top: 1em;
   }
-  .contenedor-productos div h3, .titulo-paginas .contenedor-productos div h4 {
+  .contenedor-productos div h3, .contenedor-productos div h4 {
     padding: 0.3em;
     font-size: 1em;
   }

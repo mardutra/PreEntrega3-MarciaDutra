@@ -7,6 +7,14 @@ h2 {
     color: $color-secundario;
     letter-spacing: 0.3em;
 }
+.descripcion {
+    text-align: center;
+    .desc {margin-right: 5em;
+    margin-left: 5em;
+    padding-bottom: 2em;}
+    h3 {letter-spacing: 0.3em;
+    padding-bottom: 2em;}
+}
 .contenedor {
     display: flex;
     justify-content: center;
@@ -22,10 +30,10 @@ h2 {
         align-items: center;
         text-align: center;
     }
-
     div p {
         font-family: $font-secundario;
         font-size: 1.5em;
+        font-weight: bolder;
         margin: 0.2em;
     }
 }
